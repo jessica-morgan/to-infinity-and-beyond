@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+.apod-img {
+  /* width: 1330px;
+  height: 550px; */
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+.apod-font {
+  color:  #777676;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.apod-title {
+  color:  #777676;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.apod-date {
+  color:  #777676;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #b1aeae;
+  text-align: center;
+  opacity: 0.4;
+  padding: 10px 10px;
+  margin-left: 15px;
+  margin-top: -15px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 27px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 3px 2px #5a5a5a;
+}
+
+.topnav a:hover {
+  background-color: rgb(19, 18, 18);
+  color: #e6e1e1;
+}
+
+.active, .topnav:hover {
+  color: white;
+}
+
+.earth {
+  position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+
+.earth img {
+height: 200px;
+position: absolute;
+  top: 0;
+  left: 0;
+width: 200px;
+margin-top: 50px;
+}
+
+.moon-container {
+  position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+}
+
+.moon {
+  animation: spin 20s linear infinite;
+  background: none;
+  height: 50px;
+  pointer-events: none;
+  transform-origin: 25px;
+  width: 50px;
+  margin-top: 40px;
+}
+
+.moon img {
+  height: 50px;
+  transform: translateX(-160px) translateY(-160px);
+  width: 50px;
+}
+
+.earth img, .moon img {
+    opacity: 0.6;
+  border-radius: 50%;
+  box-shadow: 0 0 12em 1em rgba(87, 111, 160, 0.6);
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
