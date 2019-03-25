@@ -968,7 +968,6 @@ function marsRoverCuriosity() {
 
 function mercuryRetrograde() {
   return _superagent2.default.get("" + mercuryAPI).then(function (mercuryRes) {
-    // console.log(mercuryRes.body)
     return mercuryRes.body;
   });
 }

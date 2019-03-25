@@ -36,7 +36,6 @@ export function mercuryRetrograde () {
   return request
     .get(`${mercuryAPI}`)
     .then(mercuryRes => {
-      // console.log(mercuryRes.body)
       return mercuryRes.body
     })
 }
